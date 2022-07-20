@@ -10,6 +10,8 @@
 
 # production
 /build
+/src/components/v1components
+/src/assets/css/style.css
 
 # misc
 .DS_Store
