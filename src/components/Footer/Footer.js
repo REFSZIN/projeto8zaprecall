@@ -7,7 +7,7 @@ export default function Footer(props){
     const { corretas, erradas, medianas, totalQuests , icons } = props;
     const soma = corretas + erradas + medianas;
     const reload = () =>{
-        window.location.reload(false)
+        window.location.reload(true)
     }
     return (
         <footer>

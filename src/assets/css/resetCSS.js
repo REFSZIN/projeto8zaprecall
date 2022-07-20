@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+
 export default createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -30,6 +31,7 @@ export default createGlobalStyle`
 a{
     text-decoration: none;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,13 +73,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#root{
+    width: 80%;
+    height: 99vh;
+}
 #root::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 body{
-    height: 100vh;
-		width: 100vw;
-		background: rgb(251,107,107);
+	background: rgb(251,107,107);
     background: radial-gradient(circle, rgba(251,107,107,1) 0%, rgb(196, 70, 95) 100%);
     border: 1px solid #DBDBDB;
     border-bottom: 0px;
@@ -87,12 +91,16 @@ body{
     align-content: center;
     justify-content: flex-start;
 }
-.root{
-    width: 80%;
-    height: 100%;
-}
-
 header{
+    background-color:  rgb(251,107,107);;
+    background: radial-gradient(circle, rgba(251,107,107,1) 0%, rgb(196, 70, 95) 100%);
+    border: 1px solid #DBDBDB;
+    border-bottom: none;
+    box-shadow: 3px -10px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    position: fixed;
+    top: -40px;
+    left: 0px;
     margin-top: 40px;
     width: 100%;
     height: 100px;
@@ -121,7 +129,6 @@ header .descHeader, aside figcaption{
 
 aside{
     width: 100%;
-    padding-bottom: 30vh;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -185,7 +192,8 @@ datalist{
     margin-bottom: 30px;
 }
 main{
-    width: 100%;
+    margin-top: 120px;
+    width: 99%;
     height: fit-content;
     height: fit-content;
     display: flex;
@@ -201,6 +209,7 @@ main{
     scrollbar-width: none;  
     position: relative;
 }
+
 main .quest{
     max-width: 100%;
     min-width: 100%;
@@ -420,8 +429,8 @@ ion-icon[name="refresh"]{
 }
 ion-icon[name="refresh"]{
     position: absolute;
-    right: 0px;
-    width: 10%;
+    right: 15px;
+    width: 20px;
     bottom: 10px;
     cursor: pointer;
 }
@@ -451,8 +460,8 @@ ion-icon[name="refresh"]{
     }
     ion-icon[name="refresh"]{
         position: absolute;
-        width: 10%;
-        right: 0px;
+        width: 18px;
+        right: 15px;
         bottom: 5px;
         cursor: pointer;
     }
